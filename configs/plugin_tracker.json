@@ -1,0 +1,66 @@
+{
+  "decode-jws": {
+    "previous_state": null,
+    "current_state": {
+      "timestamp": 1764754575,
+      "files": [
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin decode-jws at 1764754575"
+  },
+  "decode-jwt": {
+    "previous_state": null,
+    "current_state": {
+      "timestamp": 1764754722,
+      "files": [
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin decode-jwt at 1764754722"
+  },
+  "delete-oauth-v2-info": {
+    "previous_state": null,
+    "current_state": {
+      "timestamp": 1764754976,
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin delete-oauth-v2-info at 1764754976"
+  },
+  "external-callout": {
+    "previous_state": null,
+    "current_state": {
+      "timestamp": 1764758198,
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin external-callout at 1764758198"
+  },
+  "flow-callout": {
+    "previous_state": null,
+    "current_state": {
+      "timestamp": 1764758655,
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin flow-callout at 1764758655"
+  }
+}

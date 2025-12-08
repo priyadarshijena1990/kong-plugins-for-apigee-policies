@@ -1,0 +1,7 @@
+
+workspace: .
+kong_version: "3.11"
+plugins:
+  - apigee-policies-based-plugins
+test_scripts:
+  - unittests

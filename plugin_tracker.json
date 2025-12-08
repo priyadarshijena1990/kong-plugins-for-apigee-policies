@@ -1,0 +1,1327 @@
+{
+  "access-entity": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "access-entity-0.1.0-1.rockspec",
+          "docs",
+          "handler.lua",
+          "README.md",
+          "schema.lua",
+          "spec"
+        ]
+      },
+      "summary": "Updated plugin access-entity (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "access-entity-0.1.0-1.rockspec",
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin access-entity (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "assert-condition": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "assert-condition-0.1.0-1.rockspec",
+          "docs",
+          "handler.lua",
+          "README.md",
+          "schema.lua",
+          "spec"
+        ]
+      },
+      "summary": "Updated plugin assert-condition (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "assert-condition-0.1.0-1.rockspec",
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin assert-condition (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "concurrent-rate-limit": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "concurrent-rate-limit-0.1.0-1.rockspec",
+          "daos.lua",
+          "handler.lua",
+          "migrations",
+          "policies",
+          "README.md",
+          "schema.lua",
+          "spec"
+        ]
+      },
+      "summary": "Updated plugin concurrent-rate-limit (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "concurrent-rate-limit-0.1.0-1.rockspec",
+        "daos.lua",
+        "handler.lua",
+        "migrations",
+        "policies",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin concurrent-rate-limit (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "decode-jws": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "decode-jws-0.1.0-1.rockspec",
+          "docs",
+          "handler.lua",
+          "README.md",
+          "schema.lua",
+          "spec"
+        ]
+      },
+      "summary": "Updated plugin decode-jws (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "decode-jws-0.1.0-1.rockspec",
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin decode-jws (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "decode-jwt": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "decode-jwt-0.1.0-1.rockspec",
+          "docs",
+          "handler.lua",
+          "README.md",
+          "schema.lua",
+          "spec"
+        ]
+      },
+      "summary": "Updated plugin decode-jwt (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "decode-jwt-0.1.0-1.rockspec",
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin decode-jwt (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "delete-oauth-v2-info": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "delete-oauth-v2-info-0.1.0-1.rockspec",
+          "docs",
+          "handler.lua",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin delete-oauth-v2-info (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "delete-oauth-v2-info-0.1.0-1.rockspec",
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin delete-oauth-v2-info (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "external-callout": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "external-callout-0.1.0-1.rockspec",
+          "handler.lua",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin external-callout (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "external-callout-0.1.0-1.rockspec",
+        "handler.lua",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin external-callout (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "flow-callout": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "flow-callout-0.1.0-1.rockspec",
+          "handler.lua",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin flow-callout (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "flow-callout-0.1.0-1.rockspec",
+        "handler.lua",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin flow-callout (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "generate-jws": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "generate-jws-0.1.0-1.rockspec",
+          "handler.lua",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin generate-jws (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "generate-jws-0.1.0-1.rockspec",
+        "handler.lua",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin generate-jws (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "generate-jwt": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "generate-jwt-0.1.0-1.rockspec",
+          "handler.lua",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin generate-jwt (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "generate-jwt-0.1.0-1.rockspec",
+        "handler.lua",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin generate-jwt (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "get-oauth-v2-info": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "get-oauth-v2-info-0.1.0-1.rockspec",
+          "handler.lua",
+          "README.md",
+          "schema.lua",
+          "spec"
+        ]
+      },
+      "summary": "Updated plugin get-oauth-v2-info (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "get-oauth-v2-info-0.1.0-1.rockspec",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin get-oauth-v2-info (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "google-pubsub-publish": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "google-pubsub-publish-0.1.0-1.rockspec",
+          "handler.lua",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin google-pubsub-publish (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "google-pubsub-publish-0.1.0-1.rockspec",
+        "handler.lua",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin google-pubsub-publish (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "graphql": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "graphql-0.1.0-1.rockspec",
+          "handler.lua",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin graphql (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "graphql-0.1.0-1.rockspec",
+        "handler.lua",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin graphql (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "graphql-security-filter": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "graphql-security-filter-0.1.0-1.rockspec",
+          "handler.lua",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin graphql-security-filter (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "graphql-security-filter-0.1.0-1.rockspec",
+        "handler.lua",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin graphql-security-filter (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "hmac": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "hmac-0.1.0-1.rockspec",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin hmac (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "hmac-0.1.0-1.rockspec",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin hmac (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "invalidate-cache": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "handler.lua",
+          "invalidate-cache-0.1.0-1.rockspec",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin invalidate-cache (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "handler.lua",
+        "invalidate-cache-0.1.0-1.rockspec",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin invalidate-cache (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "json-threat-protection": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "json-threat-protection-0.1.0-1.rockspec",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin json-threat-protection (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "json-threat-protection-0.1.0-1.rockspec",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin json-threat-protection (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "json-to-xml": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "json-to-xml-0.1.0-1.rockspec",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin json-to-xml (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "json-to-xml-0.1.0-1.rockspec",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin json-to-xml (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "key-value-map-operations": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "dao.lua",
+          "daos.lua",
+          "docs",
+          "handler.lua",
+          "key-value-map-operations-0.1.0-1.rockspec",
+          "migrations",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin key-value-map-operations (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "dao.lua",
+        "daos.lua",
+        "docs",
+        "handler.lua",
+        "key-value-map-operations-0.1.0-1.rockspec",
+        "migrations",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin key-value-map-operations (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "log-shared-context": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "handler.lua",
+          "log-shared-context-0.1.0-1.rockspec",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin log-shared-context (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "handler.lua",
+        "log-shared-context-0.1.0-1.rockspec",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin log-shared-context (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "parse-dialogflow-request": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "parse-dialogflow-request-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin parse-dialogflow-request (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "parse-dialogflow-request-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin parse-dialogflow-request (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "publish-message": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "publish-message-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin publish-message (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "publish-message-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin publish-message (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "raise-fault": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "raise-fault-0.1.0-1.rockspec",
+          "README.md",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin raise-fault (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "raise-fault-0.1.0-1.rockspec",
+        "README.md",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin raise-fault (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "read-property-set": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "read-property-set-0.1.0-1.rockspec",
+          "schema.lua",
+          "spec"
+        ]
+      },
+      "summary": "Updated plugin read-property-set (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "read-property-set-0.1.0-1.rockspec",
+        "schema.lua",
+        "spec"
+      ]
+    },
+    "summary": "Updated plugin read-property-set (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "regular-expression-protection": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "README.md",
+          "regular-expression-protection-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin regular-expression-protection (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "README.md",
+        "regular-expression-protection-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin regular-expression-protection (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "reset-quota": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "reset-quota-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin reset-quota (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "reset-quota-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin reset-quota (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "revoke-oauth-v2": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "revoke-oauth-v2-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin revoke-oauth-v2 (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "revoke-oauth-v2-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin revoke-oauth-v2 (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "saml-assertion": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "saml-assertion-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin saml-assertion (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "saml-assertion-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin saml-assertion (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "sanitize-model-response": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "sanitize-model-response-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin sanitize-model-response (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "sanitize-model-response-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin sanitize-model-response (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "sanitize-user-prompt": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "sanitize-user-prompt-0.1.0-1.rockspec",
+          "schema.lua"
+        ]
+      },
+      "summary": "Updated plugin sanitize-user-prompt (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "sanitize-user-prompt-0.1.0-1.rockspec",
+        "schema.lua"
+      ]
+    },
+    "summary": "Updated plugin sanitize-user-prompt (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "semantic-cache-lookup": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "semantic-cache-lookup-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin semantic-cache-lookup (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "semantic-cache-lookup-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin semantic-cache-lookup (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "semantic-cache-populate": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "semantic-cache-populate-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin semantic-cache-populate (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "semantic-cache-populate-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin semantic-cache-populate (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "service-callout": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "README.md",
+          "schema.lua",
+          "service-callout-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin service-callout (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122485,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "service-callout-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin service-callout (v0.1.0-1, commit not a git repository) at 1765122485"
+  },
+  "set-dialogflow-response": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "set-dialogflow-response-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin set-dialogflow-response (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "set-dialogflow-response-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin set-dialogflow-response (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "set-integration-request": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "set-integration-request-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin set-integration-request (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "set-integration-request-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin set-integration-request (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "set-oauth-v2-info": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "set-oauth-v2-info-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin set-oauth-v2-info (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "set-oauth-v2-info-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin set-oauth-v2-info (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "soap-message-validation": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "soap-message-validation-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin soap-message-validation (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "soap-message-validation-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin soap-message-validation (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "statistics-collector": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "statistics-collector-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin statistics-collector (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "statistics-collector-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin statistics-collector (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "trace-capture": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "trace-capture-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin trace-capture (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "trace-capture-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin trace-capture (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "verify-jws": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "README.md",
+          "schema.lua",
+          "spec",
+          "verify-jws-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin verify-jws (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "README.md",
+        "schema.lua",
+        "spec",
+        "verify-jws-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin verify-jws (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "xml-threat-protection": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "schema.lua",
+          "xml-threat-protection-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin xml-threat-protection (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "schema.lua",
+        "xml-threat-protection-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin xml-threat-protection (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "xml-to-json": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "docs",
+          "handler.lua",
+          "kong",
+          "README.md",
+          "schema.lua",
+          "spec",
+          "xml-to-json-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin xml-to-json (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "docs",
+        "handler.lua",
+        "kong",
+        "README.md",
+        "schema.lua",
+        "spec",
+        "xml-to-json-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin xml-to-json (v0.1.0-1, commit not a git repository) at 1765122486"
+  },
+  "xsltransform": {
+    "previous_state": {
+      "previous_state": null,
+      "current_state": {
+        "timestamp": 1765122462,
+        "version": "0.1.0-1",
+        "commit": "not a git repository",
+        "files": [
+          "handler.lua",
+          "kong",
+          "README.md",
+          "schema.lua",
+          "spec",
+          "xsl",
+          "xsltransform-0.1.0-1.rockspec"
+        ]
+      },
+      "summary": "Updated plugin xsltransform (v0.1.0-1, commit not a git repository) at 1765122462"
+    },
+    "current_state": {
+      "timestamp": 1765122486,
+      "version": "0.1.0-1",
+      "commit": "not a git repository",
+      "files": [
+        "handler.lua",
+        "kong",
+        "README.md",
+        "schema.lua",
+        "spec",
+        "xsl",
+        "xsltransform-0.1.0-1.rockspec"
+      ]
+    },
+    "summary": "Updated plugin xsltransform (v0.1.0-1, commit not a git repository) at 1765122486"
+  }
+}

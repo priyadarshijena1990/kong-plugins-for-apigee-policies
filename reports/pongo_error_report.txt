@@ -1,0 +1,55 @@
+Pongo Plugin Validation Error Report
+
+Date: 5 December, 2025
+
+Summary of Errors:
+All 43 custom Lua plugins failed Pongo validation with a similar error pattern. The core of the error messages points to failures within Kong's internal plugin loading mechanism, specifically around `kong/db/dao/plugins.lua` during the `load_plugin` and `load_plugin_schemas` functions. The presence of `busted/core.lua` in the stack trace indicates these errors are occurring within the testing framework's execution context.
+
+The recurring nature of the error across all plugins suggests a systemic issue with the Pongo validation environment or its interaction with the Kong installation, rather than individual coding errors within each custom plugin.
+
+Detailed Analysis of the Error Message:
+The traceback typically includes:
+- `/usr/local/share/lua/5.1/kong/db/dao/plugins.lua:695: in function 'load_plugin'`
+- `/usr/local/share/lua/5.1/kong/db/dao/plugins.lua:782: in function 'load_plugin_schemas'`
+- `./spec/internal/db.lua:85: in function 'loader'`
+- `./spec/require.lua:66: in function 'reload_module'`
+- `.../usr/local/share/lua/5.1/busted/core.lua:...`
+
+This indicates that when Pongo (likely via a Busted test runner) attempts to load the plugin schemas or the plugins themselves, Kong's internal `dao` (Data Access Object) layer is encountering an issue. The absolute paths `/usr/local/share/lua/5.1/kong/...` suggest that the Kong modules are installed in a standard location, but they might not be accessible or correctly initialized within the Pongo test context.
+
+Possible Root Causes and Recommendations:
+
+1.  **Incorrect Kong/Pongo Environment Setup:**
+    *   **Issue:** The Pongo validation environment might not be properly initialized with all necessary Kong dependencies or environment variables (e.g., `LUA_PATH`, `KONG_DATABASE`, `KONG_PREFIX`).
+    *   **Recommendation:**
+        *   Ensure that Pongo is being run with the correct Kong environment variables set. This often involves sourcing Kong's environment or ensuring Pongo's test runner is configured to replicate a production Kong environment.
+        *   Verify the Pongo setup instructions for running plugin validations on Amazon Linux EC2.
+
+2.  **Missing Kong Core Dependencies within Pongo's Test Runner:**
+    *   **Issue:** Pongo's test runner might not be able to find or correctly load core Kong modules (like those under `kong.db.dao`) that the custom plugins' schemas or handlers implicitly rely on during a test execution.
+    *   **Recommendation:**
+        *   Check Pongo's documentation on how it isolates or integrates with a Kong installation for validation. It might require specific Lua path configurations or a 'mock' Kong environment.
+        *   Ensure the Kong version installed on the EC2 instance is compatible with the Pongo validation framework and the custom plugins.
+
+3.  **Lua Path Configuration:**
+    *   **Issue:** The `LUA_PATH` or `LUA_CPATH` environment variables on the EC2 instance, within the context of the Pongo test run, might not correctly include the paths to Kong's internal Lua modules or the custom plugin directories in a way that Kong's `load_plugin` function expects during validation.
+    *   **Recommendation:**
+        *   Explicitly check the `LUA_PATH` and `LUA_CPATH` environment variables in the validation environment.
+        *   Confirm that the `kong` modules (e.g., `kong.db.dao`) can be `require`d successfully from a simple Lua script running in the same context as Pongo.
+
+4.  **Permissions on Kong Installation Directory:**
+    *   **Issue:** Although the plugin files were copied to `/opt/custom_plugins` with correct permissions, if Kong itself is installed in `/usr/local/share/lua/5.1/` and there are permission issues for `ec2-user` to read these core Kong files during test execution, it could lead to loading failures.
+    *   **Recommendation:**
+        *   Verify that the `ec2-user` (or the user running Pongo validation) has read and execute permissions on all files and directories under `/usr/local/share/lua/5.1/kong/`.
+
+5.  **Pongo-Specific Configuration:**
+    *   **Issue:** Pongo might have specific requirements for how custom plugins are registered or how its validation process accesses them. The error might indicate that Pongo cannot correctly interpret or instantiate the plugin schemas within its simulated Kong environment.
+    *   **Recommendation:**
+        *   Consult Pongo's specific documentation or examples for validating custom plugins, especially regarding its internal database abstraction (`spec/internal/db.lua`) and module reloading (`spec/require.lua`).
+
+Next Steps:
+To resolve these failures, it's crucial to debug the Pongo validation environment on the EC2 instance directly. Start by:
+1.  **Logging more details:** If possible, increase the verbosity of the Pongo validation output.
+2.  **Direct Lua inspection:** From the EC2 instance, try to manually `require("kong.db.dao.plugins")` within a Lua interpreter to see if it loads successfully and then try to call `kong.db.dao.plugins.load_plugin` with a mock plugin definition to simulate the Pongo environment.
+3.  **Review Pongo/Kong Logs:** Examine any logs generated by Kong or Pongo during the validation process for more specific error messages.
+4.  **Consult Kong/Pongo Community:** Reach out to the Kong or Pongo communities with the detailed error stack for specific guidance.

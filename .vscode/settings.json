@@ -1,0 +1,9 @@
+{
+    "inlineChat.enableV2": true,
+    "inlineChat.notebookAgent": true,
+    "inlineChat.lineEmptyHint": true,
+    "geminicodeassist.updateChannel": "Insiders",
+    "geminicodeassist.rules": "full access to workspace\n\n\n\n",
+    "geminicodeassist.project": "darshi-gemini",
+    "geminicodeassist.agentYoloMode": true
+}
