@@ -1,0 +1,50 @@
+[2025-12-07 21:18:05] INFO: ==== Kong Plugin Deployment Tool Started ====
+[2025-12-07 21:18:05] INFO: Running in local mode. Mocking SSH connection.
+[2025-12-07 21:18:05] INFO: Discovering plugins in local directory...
+[2025-12-07 21:18:05] INFO: Processing plugin: access-entity
+[2025-12-07 21:18:05] INFO: Processing plugin: assert-condition
+[2025-12-07 21:18:05] INFO: Processing plugin: concurrent-rate-limit
+[2025-12-07 21:18:05] INFO: Processing plugin: decode-jws
+[2025-12-07 21:18:05] INFO: Processing plugin: decode-jwt
+[2025-12-07 21:18:05] INFO: Processing plugin: delete-oauth-v2-info
+[2025-12-07 21:18:05] INFO: Processing plugin: external-callout
+[2025-12-07 21:18:05] INFO: Processing plugin: flow-callout
+[2025-12-07 21:18:05] INFO: Processing plugin: generate-jws
+[2025-12-07 21:18:05] INFO: Processing plugin: generate-jwt
+[2025-12-07 21:18:05] INFO: Processing plugin: get-oauth-v2-info
+[2025-12-07 21:18:05] INFO: Processing plugin: google-pubsub-publish
+[2025-12-07 21:18:05] INFO: Processing plugin: graphql
+[2025-12-07 21:18:05] INFO: Processing plugin: graphql-security-filter
+[2025-12-07 21:18:05] INFO: Processing plugin: hmac
+[2025-12-07 21:18:05] INFO: Processing plugin: invalidate-cache
+[2025-12-07 21:18:05] INFO: Processing plugin: json-threat-protection
+[2025-12-07 21:18:05] INFO: Processing plugin: json-to-xml
+[2025-12-07 21:18:05] INFO: Processing plugin: key-value-map-operations
+[2025-12-07 21:18:05] INFO: Processing plugin: log-shared-context
+[2025-12-07 21:18:05] INFO: Processing plugin: parse-dialogflow-request
+[2025-12-07 21:18:05] INFO: Processing plugin: publish-message
+[2025-12-07 21:18:05] INFO: Processing plugin: raise-fault
+[2025-12-07 21:18:05] INFO: Processing plugin: read-property-set
+[2025-12-07 21:18:05] INFO: Processing plugin: regular-expression-protection
+[2025-12-07 21:18:05] INFO: Processing plugin: reset-quota
+[2025-12-07 21:18:05] INFO: Processing plugin: revoke-oauth-v2
+[2025-12-07 21:18:05] INFO: Processing plugin: saml-assertion
+[2025-12-07 21:18:05] INFO: Processing plugin: sanitize-model-response
+[2025-12-07 21:18:05] INFO: Processing plugin: sanitize-user-prompt
+[2025-12-07 21:18:05] INFO: Processing plugin: semantic-cache-lookup
+[2025-12-07 21:18:05] INFO: Processing plugin: semantic-cache-populate
+[2025-12-07 21:18:05] INFO: Processing plugin: service-callout
+[2025-12-07 21:18:06] INFO: Processing plugin: set-dialogflow-response
+[2025-12-07 21:18:06] INFO: Processing plugin: set-integration-request
+[2025-12-07 21:18:06] INFO: Processing plugin: set-oauth-v2-info
+[2025-12-07 21:18:06] INFO: Processing plugin: soap-message-validation
+[2025-12-07 21:18:06] INFO: Processing plugin: statistics-collector
+[2025-12-07 21:18:06] INFO: Processing plugin: trace-capture
+[2025-12-07 21:18:06] INFO: Processing plugin: verify-jws
+[2025-12-07 21:18:06] INFO: Processing plugin: xml-threat-protection
+[2025-12-07 21:18:06] INFO: Processing plugin: xml-to-json
+[2025-12-07 21:18:06] INFO: Processing plugin: xsltransform
+[2025-12-07 21:18:06] INFO: Running Pongo validation summary for updated plugins...
+[2025-12-07 21:18:06] INFO: SSH connection closed.
+[2025-12-07 21:18:06] INFO: Closing resources ...
+[2025-12-07 21:18:06] INFO: ==== Kong Plugin Deployment Tool Finished ====

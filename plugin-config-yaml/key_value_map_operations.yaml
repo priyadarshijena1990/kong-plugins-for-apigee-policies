@@ -1,0 +1,9 @@
+plugins:
+- name: key-value-map-operations
+  config:
+    policy: local
+    kvm_name: "user_data"
+    operation: "get"
+    key: "user_id"
+    output_destination_type: "shared_context"
+    output_destination_name: "kvm_result"

@@ -1,0 +1,11 @@
+plugins:
+- name: hmac
+  config:
+    mode: verify
+    secret_source_type: literal
+    secret_literal: "my-secret-key"
+    algorithm: HMAC-SHA256
+    signature_header_name: X-Signature
+    string_to_sign_components:
+    - component_type: method
+    - component_type: uri

@@ -1,0 +1,12 @@
+always once the instruction/task is given
+1. first understand the requirements, analyze that with different sources
+2. decide how to proceed for the goals
+3. then in the todo file create a table if not present with task, subtask, status
+4. according to the step to create taks, subtasks and status to-do ensuring the tasks and subtasks maintain the order and sequencing
+5. then take one subtask at a time, put the status to in-progress
+6. once completed update the status to completed
+7. update all in todo parallaly, so that if we can resume from there if stopped somehere in place of starting from biginning
+8. if any error comes in the middle and not listed in the to-do, then always add that error resolution task and subtasks in todo maintaining the order and sequence, and work on that error resolution on priority before proceeding ahead
+9. ensure the status to-do is grey, progress yellow, completed green, blocked red
+10. keep the already existing tasks and subtasks irrespective of status present in the todo.html and todo without deleting
+11. ensure todo and todo.html both are in sync

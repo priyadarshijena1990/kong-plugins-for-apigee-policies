@@ -1,0 +1,11 @@
+plugins:
+  - name: xsltransform
+    config:
+      xsl_file: "default.xsl"
+      xml_source: "request_body"
+      output_destination: "replace_request_body"
+      content_type: "text/xml"
+      parameters:
+        - name: "static_param_name"
+          value_from: "literal"
+          value: "Hello from Kong"

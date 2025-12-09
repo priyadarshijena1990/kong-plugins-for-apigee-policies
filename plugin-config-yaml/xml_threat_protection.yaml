@@ -1,0 +1,9 @@
+plugins:
+- name: xml-threat-protection
+  config:
+    source_type: "request_body"
+    max_element_count: 100
+    max_attribute_count: 20
+    max_depth: 10
+    on_violation_status: 400
+    on_violation_body: "XML threat detected."

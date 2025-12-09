@@ -1,0 +1,8 @@
+plugins:
+- name: regular-expression-protection
+  config:
+    patterns:
+      - "^[a-zA-Z0-9_]+$"
+    source_type: "request_body"
+    on_violation_status: 400
+    on_violation_body: "Invalid input detected."

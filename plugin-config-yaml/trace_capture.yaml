@@ -1,0 +1,7 @@
+plugins:
+- name: trace-capture
+  config:
+    trace_id_source: "header"
+    trace_id_name: "X-Trace-ID"
+    output_destination_type: "shared_context"
+    output_destination_name: "trace_info"

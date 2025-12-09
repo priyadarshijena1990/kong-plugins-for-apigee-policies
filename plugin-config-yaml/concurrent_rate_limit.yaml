@@ -1,0 +1,8 @@
+plugins:
+- name: concurrent-rate-limit
+  config:
+    limit: 10
+    key_source: "header"
+    key_name: "X-User-ID"
+    error_code: 429
+    error_message: "Too many concurrent requests"

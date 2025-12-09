@@ -1,0 +1,6 @@
+plugins:
+  - name: xml-to-json
+    config:
+      xml_source: "request_body"
+      output_destination: "replace_request_body"
+      content_type: "application/json; charset=utf-8"

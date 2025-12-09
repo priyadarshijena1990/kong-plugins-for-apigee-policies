@@ -1,0 +1,7 @@
+plugins:
+- name: statistics-collector
+  config:
+    metrics:
+      - "request_count"
+      - "error_count"
+    report_interval: 60

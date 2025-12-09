@@ -1,0 +1,6 @@
+plugins:
+- name: revoke-oauth-v2
+  config:
+    token_source_type: "header"
+    token_source_name: "Authorization"
+    revoke_endpoint: "https://auth.example.com/revoke"

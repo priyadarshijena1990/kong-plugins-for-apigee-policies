@@ -1,0 +1,7 @@
+plugins:
+- name: mock-downstream
+  config:
+    response_status: 200
+    response_body: '{"message": "Mocked response"}'
+    response_headers:
+      Content-Type: "application/json"

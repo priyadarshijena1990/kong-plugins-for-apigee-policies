@@ -1,0 +1,11 @@
+plugins:
+- name: json-threat-protection
+  config:
+    source_type: request_body
+    max_array_elements: 100
+    max_container_depth: 10
+    max_object_entry_count: 50
+    max_string_value_length: 10000
+    on_violation_status: 400
+    on_violation_body: >
+      {

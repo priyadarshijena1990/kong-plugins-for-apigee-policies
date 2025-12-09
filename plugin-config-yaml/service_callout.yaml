@@ -1,0 +1,8 @@
+plugins:
+- name: service-callout
+  config:
+    url: "https://service.example.com/api"
+    method: "GET"
+    headers:
+      Accept: "application/json"
+    timeout: 3000

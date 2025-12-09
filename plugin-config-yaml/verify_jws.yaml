@@ -1,0 +1,11 @@
+plugins:
+- name: verify-jws
+  config:
+    jws_source_type: header
+    jws_source_name: Authorization
+    public_key_source_type: literal
+    public_key_literal: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA...
+      -----END PUBLIC KEY-----
+    allowed_algorithms:

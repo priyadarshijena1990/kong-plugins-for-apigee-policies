@@ -1,0 +1,6 @@
+plugins:
+- name: set-dialogflow-response
+  config:
+    response_field: "fulfillmentText"
+    value_source_type: "shared_context"
+    value_source_name: "dialogflow_response"

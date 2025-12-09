@@ -1,0 +1,6 @@
+plugins:
+- name: read-property-set
+  config:
+    property_set_name: "user_settings"
+    output_destination_type: "shared_context"
+    output_destination_name: "property_set"

@@ -1,0 +1,10 @@
+{
+  "apigee_plugins_dir": "apigee-policies-based-plugins",
+  "remote_server": {
+    "host": "44.213.128.41",
+    "username": "ec2-user",
+    "ssh_key_path": "ssh_keys/coforge-ssh.pem",
+    "remote_temp_dir": "/tmp/pongo_validator",
+    "remote_final_plugin_path": "/opt/custom_plugins"
+  }
+}

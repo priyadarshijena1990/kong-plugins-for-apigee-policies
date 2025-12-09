@@ -1,0 +1,8 @@
+plugins:
+  - name: raise-fault
+    config:
+      status_code: 401
+      content_type: "application/json; charset=utf-8"
+      fault_body: '{"error": "Authentication Failed", "message": "Valid API Key is required."}'
+      headers:
+        X-Error-Identifier: "AUTH-001"

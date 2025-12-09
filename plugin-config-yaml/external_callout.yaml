@@ -1,0 +1,9 @@
+plugins:
+- name: external-callout
+  config:
+    url: "https://external-service.example.com/api"
+    method: "POST"
+    headers:
+      Content-Type: "application/json"
+    body_template: "{ \"user_id\": \"{{user_id}}\" }"
+    timeout: 5000

@@ -1,0 +1,5 @@
+plugins:
+- name: flow-callout
+  config:
+    flow_name: "subflow1"
+    context_key: "flow_result"

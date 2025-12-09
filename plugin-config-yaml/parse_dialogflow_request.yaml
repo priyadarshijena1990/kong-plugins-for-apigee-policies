@@ -1,0 +1,6 @@
+plugins:
+- name: parse-dialogflow-request
+  config:
+    json_path: "queryResult.parameters.user_id"
+    output_destination_type: "shared_context"
+    output_destination_name: "dialogflow_user_id"

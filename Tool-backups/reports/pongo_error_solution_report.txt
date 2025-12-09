@@ -1,0 +1,102 @@
+Pongo Plugin Validation Solutions Report
+
+Date: 5 December, 2025
+
+This report provides a structured approach to troubleshooting the systemic failures observed during Pongo validation of custom Lua plugins. All plugins failed with similar error messages related to Kong's internal plugin loading mechanism.
+
+---
+
+### **Systemic Error Categories, Reasons, and Solutions**
+
+Below is a breakdown of the common error categories, the likely reasons for their occurrence based on the validation logs, and step-by-step solutions.
+
+#### **Error Category 1: Kong/Pongo Environment Setup Issues**
+
+*   **Error Reason:** Pongo's validation environment may not be correctly initialized with all necessary Kong dependencies or environment variables (e.g., `KONG_DATABASE`, `KONG_PREFIX`, `KONG_LUA_PATH`). This leads to Kong's plugin loading functions (`load_plugin`, `load_plugin_schemas`) failing to find critical components.
+
+*   **Solutions Step by Step:**
+    1.  **Verify Kong Environment Variables:**
+        *   **Action:** Before running Pongo validation, explicitly check and set the core Kong environment variables in your EC2 instance's shell.
+        *   **Commands:**
+            ```bash
+            echo "Current KONG_DATABASE: $KONG_DATABASE"
+            echo "Current KONG_PREFIX: $KONG_PREFIX"
+            echo "Current KONG_LUA_PATH: $KONG_LUA_PATH"
+            # Example if they are not set or incorrect:
+            # export KONG_DATABASE=postgres # or cassandra
+            # export KONG_PREFIX=/usr/local/kong # or your Kong installation path
+            # export KONG_LUA_PATH="/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/local/lib/lua/5.1/?.lua;/usr/local/lib/lua/5.1/?/init.lua;;"
+            ```
+        *   **Note:** The `KONG_LUA_PATH` should include both Kong's default module paths and your custom plugin path (`/opt/custom_plugins/?.lua;/opt/custom_plugins/?/init.lua`).
+    2.  **Source Kong's Environment (if applicable):**
+        *   **Action:** If your Kong installation provides a dedicated environment setup script, execute it before running Pongo.
+        *   **Command Example:** `source /path/to/kong/env.sh` (replace with actual path).
+    3.  **Review Pongo's Documentation for Environment:**
+        *   **Action:** Consult Pongo's official documentation for any specific environment variable requirements or recommended setup procedures for plugin validation.
+
+#### **Error Category 2: Missing Kong Core Dependencies or Lua Path Misconfiguration**
+
+*   **Error Reason:** The Pongo test runner, or the Lua interpreter it uses, cannot locate or correctly load essential Kong modules (e.g., `kong.db.dao`) which are fundamental for `load_plugin` and `load_plugin_schemas` to execute successfully. This could be due to an incorrect `LUA_PATH` or an incomplete Kong installation.
+
+*   **Solutions Step by Step:**
+    1.  **Inspect Active Lua Paths:**
+        *   **Action:** Determine the `LUA_PATH` and `LUA_CPATH` that the Lua interpreter sees.
+        *   **Commands:**
+            ```bash
+            lua -e "print('LUA_PATH: ' .. package.path)"
+            lua -e "print('LUA_CPATH: ' .. package.cpath)"
+            ```
+    2.  **Verify Kong Module Accessibility:**
+        *   **Action:** Directly test if critical Kong modules can be loaded from the command line.
+        *   **Command:** `lua -e "print(require('kong.db.dao.plugins'))"`
+        *   **Expected Outcome:** This command should execute without error and print the module's table. If it fails, `LUA_PATH` is incorrect or Kong modules are missing/corrupted.
+    3.  **Correct LUA_PATH:**
+        *   **Action:** Ensure `LUA_PATH` includes all necessary directories for Kong's modules and your custom plugins.
+        *   **Command Example:**
+            ```bash
+            export LUA_PATH="/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/local/lib/lua/5.1/?.lua;/usr/local/lib/lua/5.1/?/init.lua;/opt/custom_plugins/?.lua;/opt/custom_plugins/?/init.lua;;"
+            ```
+            *(Adjust paths based on your system and Kong installation, ensuring `/opt/custom_plugins` is included.)*
+    4.  **Consider `lua_package_path` in `kong.conf`:**
+        *   **Action:** If Pongo integrates with Kong's configuration, ensure your `kong.conf` (or equivalent) has `lua_package_path` set to include `/opt/custom_plugins`.
+
+#### **Error Category 3: Pongo's Internal Test Runner Configuration**
+
+*   **Error Reason:** The stack trace mentions Pongo's internal files like `./spec/internal/db.lua` and `./spec/require.lua`, and `busted/core.lua`. This suggests Pongo's testing harness might not be correctly configured to interact with the Kong runtime or to properly interpret the plugin schemas. This could also be a version mismatch between Pongo, Kong, or the `busted` test framework.
+
+*   **Solutions Step by Step:**
+    1.  **Consult Pongo's Specific Documentation:**
+        *   **Action:** Pay close attention to Pongo's guidance on setting up custom plugin tests, especially how it handles `spec` directories and module loading within its test environment.
+    2.  **Review Pongo/Kong Version Compatibility:**
+        *   **Action:** Confirm that the version of Pongo you are using is compatible with the version of Kong installed on your EC2 instance.
+        *   **Action:** Ensure the `busted` testing framework (often a dependency of Pongo) is compatible with your Lua version and Kong setup.
+    3.  **Examine Pongo's Example Tests:**
+        *   **Action:** If Pongo provides example custom plugins with test cases, compare their structure and configuration against your own to identify discrepancies.
+
+#### **Error Category 4: Permissions on Kong Installation Files**
+
+*   **Error Reason:** Although the custom plugins were successfully copied to `/opt/custom_plugins` with appropriate permissions, the user running Pongo might not have sufficient read/execute permissions for the core Kong installation files (e.g., under `/usr/local/share/lua/5.1/kong/`).
+
+*   **Solutions Step by Step:**
+    1.  **Verify Permissions on Kong's Core Modules:**
+        *   **Action:** Check the read and execute permissions for the user (e.g., `ec2-user`) on Kong's installed Lua modules.
+        *   **Commands:**
+            ```bash
+            ls -ld /usr/local/share/lua/5.1/kong/
+            ls -l /usr/local/share/lua/5.1/kong/db/dao/plugins.lua
+            whoami # Confirm the user running Pongo
+            ```
+    2.  **Correct Permissions (if necessary):**
+        *   **Action:** If the user lacks permissions, use `sudo chmod` to grant read and execute access.
+        *   **Command Example:** `sudo chmod -R +rX /usr/local/share/lua/5.1/kong/`
+        *   **Caution:** Modifying system-wide permissions should be done carefully.
+
+---
+
+### **General Debugging Strategy:**
+
+1.  **Isolate and Simplify:** Try to create the simplest possible test case within Pongo that attempts to load just one of your plugin's schema files or a core Kong module. This can help pinpoint the exact point of failure.
+2.  **Detailed Logging:** Increase the verbosity of Pongo's output and check Kong's logs (if it's running) for more specific errors.
+3.  **Interactive Lua Debugging:** Use an interactive Lua shell (e.g., `lua` command) on the EC2 instance to manually `require` modules and simulate parts of the plugin loading process to get immediate feedback.
+
+By systematically addressing each of these potential issues, you should be able to diagnose and resolve the Pongo validation failures.

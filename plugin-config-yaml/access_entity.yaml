@@ -1,0 +1,7 @@
+plugins:
+- name: access-entity
+  config:
+    entity_type: "user"
+    entity_id_source: "header"
+    entity_id_name: "X-User-ID"
+    deny_on_missing: true

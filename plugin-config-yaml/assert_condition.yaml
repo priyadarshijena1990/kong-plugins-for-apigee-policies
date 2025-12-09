@@ -1,0 +1,7 @@
+plugins:
+- name: assert-condition
+  config:
+    condition: "kong.request.get_header('X-Required-Header') ~= nil"
+    on_false_action: "abort"
+    abort_status: 403
+    abort_message: "Missing required header: X-Required-Header"
