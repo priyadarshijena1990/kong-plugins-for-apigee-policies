@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plugin Validation Todo</title>
+  <style>
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    th { background: #f4f4f4; }
+    .status-grey { background: #e0e0e0; }
+    .status-yellow { background: #fff9c4; }
+    .status-green { background: #c8e6c9; }
+    .status-red { background: #ffcdd2; }
+  </style>
+</head>
+<body>
+  <h2>Plugin Validation Todo List</h2>
+  <table id="todo-table">
+    <thead>
+      <tr>
+        <th>Task</th>
+        <th>Subtask</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="status-green"><td>Analyze requirements for plugin validation</td><td>Review plugin specs, expected Apigee policy functionalities, and Kong integration requirements.</td><td>Completed</td></tr>
+      <tr class="status-green"><td>List implementation steps in todo</td><td>Break down the validation and error fixing process into actionable steps in the todo file.</td><td>Completed</td></tr>
+      <tr class="status-green"><td>Register and configure plugins for Pongo</td><td>Copy handler and schema files for all plugins to both plugins and custom_plugins directories. Note missing test specs for each plugin.</td><td>Completed</td></tr>
+      <tr class="status-yellow"><td>Run and fix plugin tests</td><td>Execute plugin tests, fix errors, and ensure all functionalities are preserved. Note plugins missing test specs.</td><td>In Progress</td></tr>
+      <tr class="status-yellow"><td>access-entity</td><td>Diagnose Pongo test runner environment</td><td>In Progress</td></tr>
+      <tr class="status-green"><td>access-entity</td><td>Fix Pongo project root and spec discovery so tests are found and executed</td><td>Completed</td></tr>
+      <tr class="status-red"><td>access-entity</td><td>Test run failed: attempt to index field 'dao' (a nil value) in spec/access-entity_spec.lua</td><td>Blocked</td></tr>
+      <tr class="status-yellow"><td>access-entity</td><td>Diagnose and fix usage of helpers.dao in test spec for Kong 3.x+</td><td>In Progress</td></tr>
+      <tr class="status-red"><td>access-entity</td><td>error loading plugin schemas: on plugin 'access-entity': access-entity plugin is enabled but not installed; no plugin found</td><td>Blocked</td></tr>
+      <tr class="status-yellow"><td>access-entity</td><td>Diagnose and fix plugin registration/installation in Pongo environment</td><td>In Progress</td></tr>
+      <tr class="status-grey"><td>Verify Apigee policy feature mapping</td><td>Confirm each plugin matches the features and request/response flow of the corresponding Apigee policy.</td><td>Status</td></tr>
+      <tr class="status-grey"><td>Update todo status after each step</td><td>Mark each step as completed in the todo file after successful implementation.</td><td>Status</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

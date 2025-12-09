@@ -1,0 +1,8 @@
+plugins:
+- name: invalidate-cache
+  config:
+    purge_by_prefix: false
+    cache_key_prefix: "my-api:user-profile"
+    cache_key_fragments:
+    - "request.uri.segment[2]" # Assuming URI is /users/{user_id}
+    continue_on_invalidation: true

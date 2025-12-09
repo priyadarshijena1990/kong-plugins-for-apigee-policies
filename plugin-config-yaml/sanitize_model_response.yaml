@@ -1,0 +1,7 @@
+plugins:
+- name: sanitize-model-response
+  config:
+    filter_type: "remove_fields"
+    fields:
+      - "debug_info"
+      - "internal_notes"

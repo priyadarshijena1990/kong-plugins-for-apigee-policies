@@ -1,0 +1,11 @@
+plugins:
+- name: generate-jwt
+  config:
+    algorithm: HS256
+    secret_source_type: literal
+    secret_literal: "my-super-secret"
+    subject_source_type: literal
+    subject_source_name: "user-123"
+    issuer_source_type: literal
+    issuer_source_name: "my-kong-gateway"
+    expires_in_seconds: 3600 # 1 hour

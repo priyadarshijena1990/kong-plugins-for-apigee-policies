@@ -1,0 +1,6 @@
+plugins:
+- name: sanitize-user-prompt
+  config:
+    filter_type: "regex"
+    pattern: "[<>]"
+    replacement: ""

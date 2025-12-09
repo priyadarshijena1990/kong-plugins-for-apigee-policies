@@ -1,0 +1,6 @@
+plugins:
+- name: delete-oauth-v2-info
+  config:
+    token_source_type: "header"
+    token_source_name: "Authorization"
+    context_key: "oauth_v2_info"

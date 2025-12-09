@@ -1,0 +1,10 @@
+plugins:
+- name: graphql-security-filter
+  config:
+    allowed_operation_types:
+    - query
+    block_patterns:
+    - "__schema"
+    - "__type"
+    block_status: 403
+    block_body: "Forbidden"

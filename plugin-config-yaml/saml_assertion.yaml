@@ -1,0 +1,9 @@
+plugins:
+- name: saml-assertion
+  config:
+    saml_assertion_source_type: "header"
+    saml_assertion_source_name: "Authorization"
+    verification_key_source_type: "literal"
+    verification_key_literal: "<YOUR_SAML_VERIFICATION_KEY>"
+    output_destination_type: "shared_context"
+    output_destination_name: "saml_claims"

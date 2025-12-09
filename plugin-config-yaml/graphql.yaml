@@ -1,0 +1,6 @@
+plugins:
+- name: graphql
+  config:
+    schema_source_type: "file"
+    schema_file_path: "./schema.graphql"
+    operation_logging: true

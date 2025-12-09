@@ -1,0 +1,7 @@
+plugins:
+- name: reset-quota
+  config:
+    quota_name: "user_quota"
+    reset_type: "manual"
+    user_id_source: "header"
+    user_id_name: "X-User-ID"

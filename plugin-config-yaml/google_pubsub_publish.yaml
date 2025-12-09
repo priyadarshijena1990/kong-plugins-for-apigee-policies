@@ -1,0 +1,7 @@
+plugins:
+- name: google-pubsub-publish
+  config:
+    topic: "projects/my-project/topics/my-topic"
+    message_template: "{ \"data\": \"{{data}}\" }"
+    credentials_source_type: "literal"
+    credentials_literal: "<YOUR_SERVICE_ACCOUNT_JSON>"

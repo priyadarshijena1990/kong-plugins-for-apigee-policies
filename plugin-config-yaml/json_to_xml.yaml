@@ -1,0 +1,7 @@
+plugins:
+  - name: json-to-xml
+    config:
+      json_source: "response_body"
+      output_destination: "replace_response_body"
+      root_element_name: "customer_data"
+      content_type: "application/xml; charset=utf-8"

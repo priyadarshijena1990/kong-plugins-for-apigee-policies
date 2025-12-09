@@ -1,0 +1,6 @@
+plugins:
+- name: set-integration-request
+  config:
+    integration_field: "request_id"
+    value_source_type: "header"
+    value_source_name: "X-Request-ID"

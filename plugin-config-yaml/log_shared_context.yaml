@@ -1,0 +1,5 @@
+plugins:
+- name: log-shared-context
+  config:
+    context_key: "user_data"
+    log_level: "info"

@@ -1,0 +1,7 @@
+plugins:
+- name: soap-message-validation
+  config:
+    wsdl_source_type: "file"
+    wsdl_file_path: "./service.wsdl"
+    validate_request: true
+    validate_response: false

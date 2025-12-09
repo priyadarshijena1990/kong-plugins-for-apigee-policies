@@ -1,0 +1,6 @@
+plugins:
+- name: semantic-cache-populate
+  config:
+    cache_key: "user_id"
+    value_source_type: "shared_context"
+    value_source_name: "user_data"

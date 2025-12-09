@@ -1,0 +1,9 @@
+plugins:
+- name: decode-jwt
+  config:
+    jwt_source_type: "header"
+    jwt_source_name: "Authorization"
+    public_key_source_type: "literal"
+    public_key_literal: "<YOUR_PUBLIC_KEY>"
+    output_destination_type: "shared_context"
+    output_destination_name: "decoded_jwt"

@@ -1,0 +1,11 @@
+plugins:
+- name: generate-jws
+  config:
+    payload_source_type: shared_context
+    payload_source_name: payload_for_jws # Assume a prior plugin created this table
+    private_key_source_type: literal
+    private_key_literal: "my-super-secret-for-hs256"
+    algorithm: HS256
+    jws_header_parameters:
+      kid: "service-key-1"
+    output_destination_type: header
